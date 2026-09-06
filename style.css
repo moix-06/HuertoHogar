@@ -1,0 +1,45 @@
+footer {
+    background-color: rgba(146, 66, 4, 0.407);
+    color: white;
+    padding: 10px 15px;
+    margin-top: auto;
+    text-align: center; /* Centrar texto */
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f4f4f4;
+}
+
+header {    
+    background-color: rgb(79, 2, 2);
+    padding: 16px 24px;
+    border-bottom: 3px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:25px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+
+}
