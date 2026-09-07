@@ -55,5 +55,45 @@ formulario.addEventListener("submit", function (evento) {
     }
 
     console.log("Todos los campos son validos. El formulario se puede enviar.");
+    const region = document.getElementById("region").value;
+
+    if (region === "") {
+        alert("Por favor selecciona tu región.");
+        return;
+    }
+
+    const comuna = document.getElementById("comuna").value;
+
+    if (comuna === "") {
+        alert("Por favor selecciona tu comuna.");
+        return;
+    }
+
+    console.log("Todos los campos son validos. El formulario se puede enviar.");
+
 });
 
+const formularioLogin = document.getElementById("form-login");
+
+formularioLogin.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const loginCorreo = document.getElementById("login-correo").value.trim();
+    const correoValido = /^[^\s@]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/;
+
+if (!correoValido.test(loginCorreo)) {
+    alert("El correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com");
+    return;
+     }
+
+     const loginClave = document.getElementById("login-clave").value;
+
+     if (loginClave.length < 4 || loginClave.length > 10) {
+        alert("La clave debe tener entre 4 y 10 caracteres");
+        return;
+         }
+
+         console.log("Valido, se pudo iniciar sesion.");
+     });
+
+     
