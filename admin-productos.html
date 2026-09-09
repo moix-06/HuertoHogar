@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Administrador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">HuertoHogar</a>
+</header>
+
+<main>
+  <h1>Mantenedor de Productos</h1>
+
+  <a href="admin.html">Volver al administrador</a>
+
+  <section>
+    <h2>Productos registrados</h2>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Stock</th>
+        <th>Acciones</th>
+      </tr>
+      </thead>
+
+      <tbody id="lista-productos">
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Agregar producto</h2>
+
+    <form id="form-producto" novalidate>
+
+      <label for="codigo">Código</label>
+      <input type="text" id="codigo" maxlength="20" required>
+
+      <label for="nombre-producto-admin">Nombre</label>
+      <input type="text" id="nombre-producto-admin" maxlength="100" required>
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" maxlength="500" required></textarea>
+
+      <label for="precio">Precio</label>
+      <input type="number" id="precio" min="1" required>
+
+      <label for="stock">Stock</label>
+      <input type="number" id="stock" min="0" required>
+
+      <label for="stock-critico">Stock crítico</label>
+      <input type="number" id="stock-critico" min="0" required>
+
+      <label for="categoria">Categoría</label>
+      <select id="categoria" required>
+        <option value="">Seleccionar categoría</option>
+        <option value="Frutas">Frutas</option>
+        <option value="Verduras">Verduras</option>
+        <option value="Orgánicos">Orgánicos</option>
+        <option value="Lácteos">Lácteos</option>
+      </select>
+
+      <label for="imagen">Imagen</label>
+      <input type="text" id="imagen" placeholder="imagenes/producto.png" required>
+
+      <button type="submit">Agregar producto</button>
+    </form>
+  </section>
+</main>
+
+  <footer>
+    <p>HuertoHogar - Del campo al hogar.</p>
+    <p>Contacto: contacto@huertohogar.cl</p>
+    <p>&copy; 2026 HuertoHogar. Proyecto academico DSY1104.</p>
+  </footer>
+
+  <script src="admin-productos.js"></script>
+
+</body>
+</html>
