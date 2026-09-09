@@ -2,7 +2,7 @@
     const listaCarrito = document.getElementById("lista-carrito");
     const totalCarrito = document.getElementById("total-carrito");
 
-    let carrito = [];
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     botonesCarrito.forEach(function (boton) {
     boton.addEventListener("click", function () {
@@ -18,6 +18,8 @@
             precio: precio,
             cantidad: cantidad
         });
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
 
         mostrarCarrito();
     });
@@ -58,5 +60,6 @@
 
     function eliminarProducto(indice) {
     carrito.splice(indice, 1);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito();
 }

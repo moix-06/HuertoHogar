@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del producto - HuertoHogar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">HuertoHogar</a>
+
+    <nav aria-label="Navegacion principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="producto.html">Producto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Detalle del producto</h1>
+
+    <section id="detalle-producto">
+
+        <img id="imagen-producto" src="imagenes/manzana.jpg" alt="Manzanas Fuji">
+
+        <h2 id="nombre-producto">Manzanas Fuji</h2>
+
+        <p id="descripcion-producto">
+            Manzanas frescas y naturales, ideales para disfrutar
+            en cualquier momento del día.
+        </p>
+        <p id="precio-producto">$1.200 / kilo</p>
+        <label for="cantidad-producto">Cantidad:</label>
+        <input type="number" id="cantidad-producto" min="1" value="1">
+        <button type="button" id="agregar-detalle">
+            Agregar al carrito
+        </button>
+        <br><br>
+        <a href="producto.html" class="btn-blog">
+            Volver a productos
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>HuertoHogar - Del campo al hogar.</p>
+    <p>Contacto: contacto@huertohogar.cl</p>
+    <p>&copy; 2026 HuertoHogar. Proyecto academico DSY1104.</p>
+</footer>
+
+<script src="detalle-producto.js"></script>
+
+</body>
+</html>

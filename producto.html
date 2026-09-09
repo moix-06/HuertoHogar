@@ -6,165 +6,197 @@
     <title>Productos - HuertoHogar</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <a href="index.html">HuertoHogar</a>
-        <nav aria-label="Navegacion principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="producto.html" aria-current="page">Producto</a></li>
-                <li><a href="registro.html">Mi cuenta</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Nuestros productos</h1>
+<header>
+    <a href="index.html">HuertoHogar</a>
 
-        <section class="productos">
-            <h2>Frutas Frescas</h2>
+    <nav aria-label="Navegacion principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="producto.html" aria-current="page">Producto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <article class="producto" data-nombre="Manzanas Fuji" data-precio="1200">
-                <h3>Manzanas Fuji</h3>
-                <p>$1.200 / kilo</p>
-                <img src="imagenes/manzana.jpg" alt="Manzanas">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
+<main>
 
-            <article class="producto" data-nombre="Naranjas Valencia" data-precio="1000">
-                <h3>Naranjas Valencia</h3>
-                <p>$1.000 / kilo</p>
-                <img src="imagenes/naranja.png" alt="Naranjas">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
+    <h1>Nuestros productos</h1>
 
-            <article class="producto" data-nombre="Platanos Cavendish" data-precio="800">
-                <h3>Platanos Cavendish</h3>
-                <p>$800 / kilo</p>
-                <img src="imagenes/platano.png" alt="Plátanos">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-        </section>
+    <section class="productos">
+        <h2>Frutas Frescas</h2>
 
-        <section class="productos">
-            <h2>Verduras Organicas</h2>
-
-            <article class="producto" data-nombre="Zanahorias Organicas" data-precio="900">
-                <h3>Zanahorias Organicas</h3>
-                <p>$900 / kilo</p>
-                <img src="imagenes/zanahoria.png" alt="Zanahorias">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-
-            <article class="producto" data-nombre="Espinacas Frescas" data-precio="700">
-                <h3>Espinacas Frescas</h3>
-                <p>$700 / bolsa 500g</p>
-                <img src="imagenes/espinaca.jpg" alt="Espinacas">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-
-            <article class="producto" data-nombre="Pimientos Tricolores" data-precio="1500">
-                <h3>Pimientos Tricolores</h3>
-                <p>$1.500 / kilo</p>
-                <img src="imagenes/pimientos.jpg" alt="Pimientos">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-        </section>
-     
-        <section class="productos">
-            <h2>Productos Organicos</h2>
-
-            <article class="producto" data-nombre="Miel Organica" data-precio="5000">
-                <h3>Miel Organica</h3>
-                <p>$5.000 / Frasco 500g</p>
-                <img src="imagenes/miel.png" alt="Miel">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-
-            <article class="producto" data-nombre="Quinua Organica" data-precio="3200">
-                <h3>Quinua Organica</h3>
-                <p>$3.200 / kilo</p>
-                <img src="imagenes/quinoa.png" alt="Quinoa">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-        </section>
-
-        <section class="productos">
-            <h2>Productos Lacteos</h2>
-
-            <article class="producto" data-nombre="Leche Entera" data-precio="1200">
-                <h3>Leche Entera</h3>
-                <p>$1.200 / Litro</p>
-                <img src="imagenes/leche.png" alt="Leche Entera">
-                <div class="cantidad-container">
-                    <label>
-                        Cantidad:
-                        <input type="number" class="cantidad" value="1" min="1">
-                    </label>
-                </div>
-                <button type="button" class="btn-carrito">Agregar al carrito</button>
-            </article>
-        </section>
-
-        <section id="carrito">
-            <h2>Mi carrito</h2>
-            <div id="lista-carrito">
-                <p>Tu carrito está vacío.</p>
+        <article class="producto" data-id="manzanas" data-nombre="Manzanas Fuji" data-precio="1200">
+            <h3>Manzanas Fuji</h3>
+            <p>$1.200 / kilo</p>
+            <img src="imagenes/manzana.jpg" alt="Manzanas">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
             </div>
-            <p id="total-carrito">Total: $0</p>
-        </section>
-    </main>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=manzanas" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
 
+        <article class="producto" data-id="naranjas" data-nombre="Naranjas Valencia" data-precio="1000">
+            <h3>Naranjas Valencia</h3>
+            <p>$1.000 / kilo</p>
+            <img src="imagenes/naranja.png" alt="Naranjas">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=naranjas" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
 
-    
+        <article class="producto" data-id="platanos" data-nombre="Platanos Cavendish" data-precio="800">
+            <h3>Platanos Cavendish</h3>
+            <p>$800 / kilo</p>
+            <img src="imagenes/platano.png" alt="Plátanos">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=platanos" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+    </section>
+
+    <section class="productos">
+        <h2>Verduras Organicas</h2>
+
+        <article class="producto" data-id="zanahorias" data-nombre="Zanahorias Organicas" data-precio="900">
+            <h3>Zanahorias Organicas</h3>
+            <p>$900 / kilo</p>
+            <img src="imagenes/zanahoria.png" alt="Zanahorias">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=zanahorias" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+
+        <article class="producto" data-id="espinacas" data-nombre="Espinacas Frescas" data-precio="700">
+            <h3>Espinacas Frescas</h3>
+            <p>$700 / bolsa 500g</p>
+            <img src="imagenes/espinaca.jpg" alt="Espinacas">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=espinacas" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+
+        <article class="producto" data-id="pimientos" data-nombre="Pimientos Tricolores" data-precio="1500">
+            <h3>Pimientos Tricolores</h3>
+            <p>$1.500 / kilo</p>
+            <img src="imagenes/pimientos.jpg" alt="Pimientos">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=pimientos" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+    </section>
+
+    <section class="productos">
+        <h2>Productos Organicos</h2>
+
+        <article class="producto" data-id="miel" data-nombre="Miel Organica" data-precio="5000">
+            <h3>Miel Organica</h3>
+            <p>$5.000 / Frasco 500g</p>
+            <img src="imagenes/miel.png" alt="Miel">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=miel" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+
+        <article class="producto" data-id="quinoa" data-nombre="Quinua Organica" data-precio="3200">
+            <h3>Quinua Organica</h3>
+            <p>$3.200 / kilo</p>
+            <img src="imagenes/quinoa.png" alt="Quinoa">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=quinoa" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+    </section>
+
+    <section class="productos">
+        <h2>Productos Lacteos</h2>
+
+        <article class="producto" data-id="leche" data-nombre="Leche Entera" data-precio="1200">
+            <h3>Leche Entera</h3>
+            <p>$1.200 / Litro</p>
+            <img src="imagenes/leche.png" alt="Leche Entera">
+            <div class="cantidad-container">
+                <label>
+                    Cantidad:
+                    <input type="number" class="cantidad" value="1" min="1">
+                </label>
+            </div>
+            <button type="button" class="btn-carrito">Agregar al carrito</button>
+            <a href="detalle-producto.html?id=leche" class="btn-blog">
+                Ver detalle
+            </a>
+        </article>
+    </section>
+
+    <section id="carrito">
+        <h2>Mi carrito</h2>
+        <div id="lista-carrito">
+            <p>Tu carrito está vacío.</p>
+        </div>
+        <p id="total-carrito">Total: $0</p>
+    </section>
+
+</main>
 
     <footer>
         <p>HuertoHogar - Del campo al hogar.</p>
@@ -172,6 +204,7 @@
         <p>&copy; 2026 HuertoHogar. Proyecto academico DSY1104.</p>
     </footer>
 
-        <script src="carrito.js"></script>
+    <script src="carrito.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HuertoHogar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">HuertoHogar</a>
+
+    <nav aria-label="Navegacion principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="producto.html">Producto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            <li><a href="registro.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Contáctanos</h1>
+
+    <p>
+        ¿Tienes alguna consulta? Envíanos un mensaje y te responderemos
+        lo antes posible.
+    </p>
+
+    <form id="form-contacto" action="#" novalidate>
+
+        <label for="nombre-contacto">Nombre:</label>
+        <input
+                type="text"
+                id="nombre-contacto"
+                name="nombre"
+                maxlength="100"
+                autocomplete="name"
+                required
+        >
+        <small id="error-nombre-contacto"></small>
+        <label for="correo-contacto">Correo electrónico:</label>
+        <input
+                type="email"
+                id="correo-contacto"
+                name="correo"
+                maxlength="100"
+                autocomplete="email"
+                required
+        >
+        <small id="error-correo-contacto"></small>
+        <label for="comentario-contacto">Mensaje:</label>
+        <textarea
+                id="comentario-contacto"
+                name="comentario"
+                maxlength="500"
+                required
+        ></textarea>
+        <small id="error-comentario-contacto"></small>
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+
+</main>
+
+    <footer>
+        <p>HuertoHogar - Del campo al hogar.</p>
+        <p>Contacto: contacto@huertohogar.cl</p>
+        <p>&copy; 2026 HuertoHogar. Proyecto academico DSY1104.</p>
+    </footer>
+
+    <script src="contacto.js"></script>
+
+</body>
+</html>
