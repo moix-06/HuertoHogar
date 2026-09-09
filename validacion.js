@@ -119,7 +119,6 @@
         alert("La clave debe tener entre 4 y 10 caracteres");
         return;
          }
-
         alert("Inicio de sesión válido");
         window.location.href = "index.html";
      });
