@@ -22,58 +22,64 @@
         
         <h2>Crear cuenta</h2>
 
-        <form>
+        <form id="form-registro" action="#" novalidate>
             <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+            <small id="error-nombre"></small>
 
             <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+            <input type="text" id="apellidos" name="apellidos" autocomplete="family-name" required>
+            <small id="error-apellidos"></small>
 
             <label for="run">RUN:</label>
             <input type="text" id="run" name="run" required>
+            <small id="error-run"></small>
 
             <label for="correo">Correo electronico</label>
-           <input type="email" id="correo" name="correo" required>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+            <small id="error-correo"></small>
 
             <label for="clave">Contraseña</label>
-            <input type="password" id="clave" name="clave" required>
+            <input type="password" id="clave" name="clave" autocomplete="new-password" required>
+            <small id="error-clave"></small>
 
             <label for="fecha-nacimiento">Fecha de nacimiento</label> 
             <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            <small id="error-fecha"></small>
 
             <label for="direccion">Direccion</label>
-            <input type="text" id="direccion" name="direccion" required>
+            <input type="text" id="direccion" name="direccion" autocomplete="street-address" required>
+            <small id="error-direccion"></small>
 
             <label for="region">Región</label>
-<select id="region" name="region" required>
-    <option value="">-- Selecciona tu región --</option>
-    <option value="metropolitana">Región Metropolitana de Santiago</option>
-    <option value="araucania">Región de la Araucanía</option>
-    <option value="nuble">Región de Ñuble</option>
+            <select id="region" name="region" required>
+                <option value="">-- Selecciona tu región --</option>
+                <option value="metropolitana">Región Metropolitana de Santiago</option>
+                <option value="araucania">Región de la Araucanía</option>
+                <option value="nuble">Región de Ñuble</option>
+                <small id="error-region"></small>
 </select>
 
 
-<label for="comuna">Comuna</label>
-<select id="comuna" name="comuna" required>
-    <option value="">-- Selecciona tu comuna --</option>
-        <option value="santiago">Santiago</option>
-    <option value="providencia">Providencia</option>
-    <option value="las-condes">Las Condes</option>
+            <label for="comuna">Comuna</label>
+            <select id="comuna" name="comuna" required>
+                <option value="">-- Selecciona tu comuna --</option>
+                <option value="santiago">Santiago</option>
+                <option value="providencia">Providencia</option>
+                <option value="las-condes">Las Condes</option>
+                <small id="error-comuna"></small>
 </select>
             <button type="submit">Registrarse</button>
-
-            <form id="form-registro" action="#"></form>
 
         </form>
 
         <h2>Iniciar sesión</h2>
         
         <form id="form-login" action="#">
-    <label for="login-correo">Correo electronico</label>
-    <input type="email" id="login-correo" name="login-correo" required>
-
-    <label for="login-clave">Contraseña</label>
-    <input type="password" id="login-clave" name="login-clave" required>
+        <label for="login-correo">Correo electronico</label>
+        <input type="email" id="login-correo" name="login-correo" required>
+            <label for="login-clave">Contraseña</label>
+        <input type="password" id="login-clave" name="login-clave" required>
 
     <button type="submit">Iniciar sesion</button>
 </form>

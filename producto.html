@@ -21,68 +21,149 @@
     <main>
         <h1>Nuestros productos</h1>
 
-        <section>
+        <section class="productos">
             <h2>Frutas Frescas</h2>
 
-            <article>
+            <article class="producto" data-nombre="Manzanas Fuji" data-precio="1200">
                 <h3>Manzanas Fuji</h3>
                 <p>$1.200 / kilo</p>
+                <img src="imagenes/manzana.jpg" alt="Manzanas">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
 
-            <article>
+            <article class="producto" data-nombre="Naranjas Valencia" data-precio="1000">
                 <h3>Naranjas Valencia</h3>
                 <p>$1.000 / kilo</p>
+                <img src="imagenes/naranja.png" alt="Naranjas">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
 
-            <article>
+            <article class="producto" data-nombre="Platanos Cavendish" data-precio="800">
                 <h3>Platanos Cavendish</h3>
                 <p>$800 / kilo</p>
+                <img src="imagenes/platano.png" alt="Plátanos">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
         </section>
 
-        <section>
+        <section class="productos">
             <h2>Verduras Organicas</h2>
 
-            <article>
+            <article class="producto" data-nombre="Zanahorias Organicas" data-precio="900">
                 <h3>Zanahorias Organicas</h3>
                 <p>$900 / kilo</p>
+                <img src="imagenes/zanahoria.png" alt="Zanahorias">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
 
-            <article>
+            <article class="producto" data-nombre="Espinacas Frescas" data-precio="700">
                 <h3>Espinacas Frescas</h3>
                 <p>$700 / bolsa 500g</p>
+                <img src="imagenes/espinaca.jpg" alt="Espinacas">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
 
-            <article>
+            <article class="producto" data-nombre="Pimientos Tricolores" data-precio="1500">
                 <h3>Pimientos Tricolores</h3>
                 <p>$1.500 / kilo</p>
+                <img src="imagenes/pimientos.jpg" alt="Pimientos">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
         </section>
      
-        <section>
+        <section class="productos">
             <h2>Productos Organicos</h2>
 
-            <article>
+            <article class="producto" data-nombre="Miel Organica" data-precio="5000">
                 <h3>Miel Organica</h3>
                 <p>$5.000 / Frasco 500g</p>
+                <img src="imagenes/miel.png" alt="Miel">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
 
-            <article>
+            <article class="producto" data-nombre="Quinua Organica" data-precio="3200">
                 <h3>Quinua Organica</h3>
                 <p>$3.200 / kilo</p>
+                <img src="imagenes/quinoa.png" alt="Quinoa">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
             </article>
+        </section>
+
+        <section class="productos">
+            <h2>Productos Lacteos</h2>
+
+            <article class="producto" data-nombre="Leche Entera" data-precio="1200">
+                <h3>Leche Entera</h3>
+                <p>$1.200 / Litro</p>
+                <img src="imagenes/leche.png" alt="Leche Entera">
+                <div class="cantidad-container">
+                    <label>
+                        Cantidad:
+                        <input type="number" class="cantidad" value="1" min="1">
+                    </label>
+                </div>
+                <button type="button" class="btn-carrito">Agregar al carrito</button>
+            </article>
+        </section>
+
+        <section id="carrito">
+            <h2>Mi carrito</h2>
+            <div id="lista-carrito">
+                <p>Tu carrito está vacío.</p>
+            </div>
+            <p id="total-carrito">Total: $0</p>
         </section>
     </main>
 
-    <section>
 
-        <h2>Productos Lacteos</h2>
-        
-        <article>
-            <h3>Leche Entera</h3>
-            <p>$1.200 / Litro</p>
-        </article>
-    </section>
     
 
     <footer>
@@ -91,6 +172,6 @@
         <p>&copy; 2026 HuertoHogar. Proyecto academico DSY1104.</p>
     </footer>
 
-        <script src="validacion.js"></script>
+        <script src="carrito.js"></script>
 </body>
 </html>
